@@ -24,9 +24,13 @@
         </div>
       </form>
       <div class="card-action center">
-        <a (click)="login()" class="waves-effect waves-light btn" *ngIf="!auth.isLoggedIn"
-          >Se connecter</a
+        <a
+          (click)="login()"
+          class="waves-effect waves-light btn"
+          *ngIf="!auth.isLoggedIn"
         >
+          Se connecter
+        </a>
         <a (click)="logout()" *ngIf="auth.isLoggedIn">Se déconnecter</a>
       </div>
     </div>
